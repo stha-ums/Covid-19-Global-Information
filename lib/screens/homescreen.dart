@@ -28,6 +28,7 @@ class _HomeScreensState extends State<HomeScreens> {
     final screenDimention = MediaQuery.of(context).size;
     UiElements.screenHeight = screenDimention.height;
     UiElements.screenWidth = screenDimention.width;
+    UiElements.padding = UiElements.screenWidth*0.0243;
     print(UiElements.screenHeight);
     return Scaffold(
       
@@ -104,7 +105,7 @@ class MyCustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(UiElements.padding*.1, 0, 0, 0),
+              padding:  EdgeInsets.fromLTRB(UiElements.padding*.1, 0, 0, 0),
               child: Text('Global Corona Data',
                 style: TextStyle(
                   color:UiElements.primaryColor,

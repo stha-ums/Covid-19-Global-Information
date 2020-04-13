@@ -155,7 +155,7 @@ Future <Widget> customDialoge(context){
               crossAxisAlignment:CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(UiElements.padding*2,0, UiElements.padding*1.5,0),
+                  padding: EdgeInsets.fromLTRB(UiElements.padding*2,0, UiElements.padding*1.5,0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
@@ -189,6 +189,7 @@ Future <Widget> customDialoge(context){
                     springAnimationDurationInMilliseconds : 500,
                     height: 50,
                     borderWidth: 1,
+                    
                     child: ListView.builder(
                     itemCount: summaryData.countries.length,
                     itemBuilder: (BuildContext context, int index){
@@ -209,8 +210,8 @@ Future <Widget> customDialoge(context){
                         child: Stack(
                         children: <Widget>[
                           Container(
-                                margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding*1.5,UiElements.padding, UiElements.padding*1.5,0),
-                                width: UiElements.screenWidth - UiElements.padding*3,
+                                margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding,UiElements.padding, UiElements.padding,0),
+                                width: UiElements.screenWidth - UiElements.padding*2,
                                 height: UiElements.screenHeight*.08,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
@@ -222,13 +223,13 @@ Future <Widget> customDialoge(context){
                                     Container(
                                       alignment: Alignment.centerLeft,
                                       height: UiElements.screenHeight*.13,
-                                      width: (UiElements.screenWidth - UiElements.padding*3)*2/4,
+                                      width: (UiElements.screenWidth - UiElements.padding*2)*2/4,
                                       decoration: BoxDecoration(
                                         color: UiElements.cardViewColor3,
                                         borderRadius: BorderRadius.only(topLeft:Radius.circular(UiElements.padding) ,bottomLeft: Radius.circular(UiElements.padding)),
                                       ),                        
                                       child: Padding(
-                                        padding: const EdgeInsets.only(left:UiElements.padding*1.5),
+                                        padding: EdgeInsets.only(left:UiElements.padding*1.5),
                                         child: Text(summaryData.countries[index].country, 
                                         textAlign: TextAlign.left,
                                           style: TextStyle(
@@ -242,7 +243,7 @@ Future <Widget> customDialoge(context){
                                     ),
 
                                     Container(
-                                      width: (UiElements.screenWidth - UiElements.padding*3)/4,
+                                      width: (UiElements.screenWidth - UiElements.padding*2)/4,
                                       height: UiElements.screenHeight*.13,
                                       decoration: BoxDecoration(
                                         color: UiElements.cardViewColor1,
@@ -272,7 +273,7 @@ Future <Widget> customDialoge(context){
                                   ), 
                                                     
                                   Container(
-                                    width:(UiElements.screenWidth - UiElements.padding*3)/4, 
+                                    width:(UiElements.screenWidth - UiElements.padding*2)/4, 
                                     height: UiElements.screenHeight*.13,
                                     decoration: BoxDecoration(
                                       

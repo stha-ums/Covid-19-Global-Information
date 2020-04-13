@@ -26,7 +26,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
             children: <Widget>[
               SizedBox(height:UiElements.padding),
               Padding(
-                padding: const EdgeInsets.fromLTRB(UiElements.padding, 0, UiElements.padding, 0),
+                padding:  EdgeInsets.fromLTRB(UiElements.padding, 0, UiElements.padding, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -118,7 +118,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                 ),
               ),
             Padding(
-              padding: const EdgeInsets.all(UiElements.padding),
+              padding:  EdgeInsets.all(UiElements.padding),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -156,7 +156,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(UiElements.padding),
+              padding:  EdgeInsets.all(UiElements.padding),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -193,7 +193,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
             ),
 
             Padding(
-              padding: const EdgeInsets.all(UiElements.padding),
+              padding:  EdgeInsets.all(UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -232,7 +232,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
 
 
             Padding(
-              padding: const EdgeInsets.all(UiElements.padding),
+              padding:  EdgeInsets.all(UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -270,7 +270,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
             ),
 
             Padding(
-              padding: const EdgeInsets.all(UiElements.padding),
+              padding:  EdgeInsets.all(UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -308,7 +308,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
             ),
 
             Padding(
-              padding: const EdgeInsets.all(UiElements.padding),
+              padding:  EdgeInsets.all(UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[

@@ -9,7 +9,7 @@ class UiElements{
   static final cardViewColor1 = Color(0xff404144);
   static final cardViewColor2 = Color(0xff404041);
 
-  static const double padding=  10;
+  static double padding=  10;
   static const double primaryFontSize= 30;
   static double screenHeight = 0;
   static double screenWidth = 0;

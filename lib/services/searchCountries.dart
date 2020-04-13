@@ -143,7 +143,7 @@ class _SearchListViewState extends State<SearchListView> {
                           width: (UiElements.screenWidth-3*UiElements.padding)-UiElements.screenHeight*.2,
                           alignment: Alignment.centerLeft,
                           height: UiElements.screenHeight*.13,
-                          padding: const EdgeInsets.only(left:UiElements.padding),
+                          padding:  EdgeInsets.only(left:UiElements.padding),
                           decoration: BoxDecoration(
                             //color: Colors.white,
                             borderRadius: BorderRadius.only(topLeft:Radius.circular(UiElements.padding) ,bottomLeft: Radius.circular(UiElements.padding)),

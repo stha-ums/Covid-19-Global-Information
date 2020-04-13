@@ -58,7 +58,7 @@ class _PieChartGloble extends State {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(UiElements.padding),
+              padding:  EdgeInsets.all(UiElements.padding),
               child: Column(
                 children: <Widget>[
                   Row(

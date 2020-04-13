@@ -24,7 +24,7 @@ class _GlobalStatisticsScreenState extends State<GlobalStatisticsScreen> {
             children: <Widget>[
               SizedBox(height:UiElements.padding),
               Padding(
-                padding: const EdgeInsets.fromLTRB(UiElements.padding, 0, UiElements.padding, 0),
+                padding:  EdgeInsets.fromLTRB(UiElements.padding, 0, UiElements.padding, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -76,7 +76,7 @@ class _GlobalStatisticsScreenState extends State<GlobalStatisticsScreen> {
               ),
               ),
             Padding(
-              padding: const EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
+              padding:  EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -114,7 +114,7 @@ class _GlobalStatisticsScreenState extends State<GlobalStatisticsScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
+              padding:  EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -151,7 +151,7 @@ class _GlobalStatisticsScreenState extends State<GlobalStatisticsScreen> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
+              padding:  EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -187,7 +187,7 @@ class _GlobalStatisticsScreenState extends State<GlobalStatisticsScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
+              padding:  EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -224,7 +224,7 @@ class _GlobalStatisticsScreenState extends State<GlobalStatisticsScreen> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
+              padding:  EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -261,7 +261,7 @@ class _GlobalStatisticsScreenState extends State<GlobalStatisticsScreen> {
             ),
 
             Padding(
-              padding:const EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
+              padding: EdgeInsets.only(top:UiElements.padding,left:UiElements.padding,right:UiElements.padding),
               child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
