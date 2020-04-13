@@ -157,7 +157,7 @@ Future<void> _handleRefresh() async {
                 GestureDetector(
                   onTap: (){
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => StatisticsScreen(index:countryIndex)));
-                    print('Ouch, Dont you dare touch me');},
+                    },
                   child: Container(
                             margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding*1.5,UiElements.padding, UiElements.padding*1.5,0),
                     width: UiElements.screenWidth - UiElements.padding*3,
@@ -268,7 +268,6 @@ Future<void> _handleRefresh() async {
                 ),
                 GestureDetector(
                   onTap: (){
-                    print('dont you dare touch me bro');
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => StatisticsScreen(index:chinaIndex)));
                   },
                     child: Container(

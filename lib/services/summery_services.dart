@@ -20,7 +20,6 @@ Future <Summary> getSummary() async{
       Map valueMap = json.decode(responseIp.body);
       String ip = valueMap['ip'];
 
-      
       String urcountryCode='https://ipapi.co';
       final responseCode = await http.get('$urcountryCode/$ip/country');
       countryCode = responseCode.body;
@@ -33,7 +32,6 @@ Future <Summary> getSummary() async{
   }
   catch(e){
     print(e);
-    print('ThePhone is Offline');
     deviceOffline = true;
     firstTime = true;
   }
