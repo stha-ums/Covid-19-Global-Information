@@ -1,6 +1,6 @@
 # covid19
 
-A new Flutter project.
+A Covid 19 globle information Live Data using Flutter.
 
 ## Getting Started
 
