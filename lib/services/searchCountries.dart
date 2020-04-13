@@ -83,9 +83,7 @@ class _SearchListViewState extends State<SearchListView> {
                         fontSize: 25,
                         fontWeight: FontWeight.w600,
                         ), 
-
                         onChanged: (string){
-                          
                             _debouncer.run((){
                             setState(() {
                                   filteredDataList = summaryCountryDataList
@@ -97,10 +95,8 @@ class _SearchListViewState extends State<SearchListView> {
                                   }
                                 );
                             });
-
                         },
                     ),
-
                   ),
                 ],
               ),
@@ -121,8 +117,6 @@ class _SearchListViewState extends State<SearchListView> {
 
         return GestureDetector(
           onTap: (){
-            
-            
             // Navigator.pop(context);
             if(indexingAll){
             Navigator.push(context,MaterialPageRoute(builder: (context) => StatisticsScreen(index: index,)),);    
@@ -131,7 +125,7 @@ class _SearchListViewState extends State<SearchListView> {
                 int indexNew = summaryData.countries.indexOf(filteredDataList[index]);
                 Navigator.push(context,MaterialPageRoute(builder: (context) => StatisticsScreen(index: indexNew,)),);
             }
-                    },
+            },
             child: Stack(
             children: <Widget>[
               Container(
@@ -154,7 +148,7 @@ class _SearchListViewState extends State<SearchListView> {
                             //color: Colors.white,
                             borderRadius: BorderRadius.only(topLeft:Radius.circular(UiElements.padding) ,bottomLeft: Radius.circular(UiElements.padding)),
                           ),                        
-                          child: Text(filteredDataList[index].country, // TODO update this data
+                          child: Text(filteredDataList[index].country, 
                             textAlign: TextAlign.start,
                               style: TextStyle(
                                 decoration: TextDecoration.none,

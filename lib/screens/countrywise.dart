@@ -229,7 +229,7 @@ Future <Widget> customDialoge(context){
                                       ),                        
                                       child: Padding(
                                         padding: const EdgeInsets.only(left:UiElements.padding*1.5),
-                                        child: Text(summaryData.countries[index].country, // TODO update this data
+                                        child: Text(summaryData.countries[index].country, 
                                         textAlign: TextAlign.left,
                                           style: TextStyle(
                                           color:UiElements.primaryFontColor,
@@ -251,7 +251,7 @@ Future <Widget> customDialoge(context){
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text('${summaryData.countries[index].totalConfirmed}', //Confirmed cases //TODO: update this data
+                                          Text('${summaryData.countries[index].totalConfirmed}', //Confirmed cases 
                                             style: TextStyle(
                                             color:UiElements.primaryFontColor,
                                             fontSize: 20,

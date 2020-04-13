@@ -10,8 +10,15 @@ import 'status.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+
+
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([
@@ -29,35 +36,50 @@ class MyApp extends StatelessWidget {
           }
           if(deviceOffline)
           {
-            deviceOffline=false;
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text('No Internet',style:TextStyle(
-                        color: Colors.white,
-                        fontSize: 60,
-                         fontWeight: FontWeight.bold,
-                          // letterSpacing: 1.5,
-                        ),
-                      ),
-                    Text('Please Check your Internet ',style:TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                         fontWeight: FontWeight.bold,
-                          // letterSpacing: 1.5,
-                        ),
-                      ),
-                Text('Stay Home, Stay Safe',
-                style:TextStyle(
-                        color: UiElements.primaryColor,
-                        fontSize: 20,
-                         fontWeight: FontWeight.bold,
-                          // letterSpacing: 1.5,
-                        ),)
-              ],
-            );
-            
+            return Center(
+            child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text('No Internet',style:TextStyle(
+                      decoration: TextDecoration.none,
+                            color: Colors.white,
+                            fontSize: 60,
+                             fontWeight: FontWeight.bold,
+                              // letterSpacing: 1.5,
+                            ),
+                          ),
+                          SizedBox(height:20),
+                        Text('Please Check your Internet ',style:TextStyle(
+                          decoration: TextDecoration.none,
+                            color: Colors.white,
+                            fontSize: 30,
+                             fontWeight: FontWeight.bold,
+                              // letterSpacing: 1.5,
+                            ),
+                          ),
+                    Text('Stay Home, Stay Safe',
+                    style:TextStyle(
+                      decoration: TextDecoration.none,
+                            color: UiElements.primaryColor,
+                            fontSize: 20,
+                             fontWeight: FontWeight.bold,
+                              // letterSpacing: 1.5,
+                            ),
+                          ),
+                    SizedBox(height:30),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          deviceOffline =false;
+                        });
+                      },
+                      child: Icon(Icons.refresh,color: Colors.white,size: 30,),
+                      )
+                  ],
+              ),
+    );
+
           }
           else //this will be the main page
           {

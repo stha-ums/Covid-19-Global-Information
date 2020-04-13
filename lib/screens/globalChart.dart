@@ -21,17 +21,16 @@ class _PieChartGloble extends State {
       aspectRatio: 1.3,
       child: Container(
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(UiElements.padding),
-        color: UiElements.cardViewColor3,),
-        
+        color: UiElements.backgroundcolor,),
         child: Column(
-          
           children: <Widget>[
             SizedBox(height:8),
             Text('Global Data',style: TextStyle(
               color:UiElements.primaryFontColor,
               fontSize: 18,
               fontWeight:FontWeight.w600
-            ),),
+            ),
+            ),
             const SizedBox(
               height: 10,
             ),
@@ -63,7 +62,6 @@ class _PieChartGloble extends State {
             Padding(
               padding: const EdgeInsets.all(UiElements.padding),
               child: Column(
-              
                 children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -86,7 +84,6 @@ class _PieChartGloble extends State {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
-                      
                       Text('Total Recovered: ${summaryData.global.totalRecovered}',
                       style: TextStyle(
                       color: Colors.white,

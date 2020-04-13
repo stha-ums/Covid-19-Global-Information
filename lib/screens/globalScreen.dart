@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:covid19/models/summary_model.dart';
 import 'package:covid19/screens/globalChart.dart';
+import 'package:covid19/screens/globalStatistic.dart';
 import 'package:covid19/screens/statisticsScreen.dart';
 import 'package:covid19/services/summery_services.dart';
 import 'package:covid19/status.dart';
@@ -55,7 +56,7 @@ Future<void> _handleRefresh() async {
               children: <Widget>[
                 GestureDetector(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => PieChartGloble()));
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => GlobalStatisticsScreen()));
                   },
                   child: Container(
                     margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding*1.5,UiElements.padding, UiElements.padding*1.5,0),
@@ -146,9 +147,7 @@ Future<void> _handleRefresh() async {
                                                                 
                             ],
                           )
-                      
                     ),    
-
                     ],
                     ),
                   ),
