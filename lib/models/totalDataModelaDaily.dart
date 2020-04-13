@@ -8,16 +8,13 @@ List <double> xDateData= [];
 dynamic totalDailyCountryDataConfirmed;
 dynamic totalDailyCountryDataRecovered;
 dynamic totalDailyCountryDataDeaths;
-
 List <double> numberofCasesConfirmedListTotal ;
 List <DateTime> caseDateConfirmedListTotal ;
 
 List <double> numberofCasesRecoveredListTotal;
 List <DateTime> caseDateRecoveredListTotal;
-
 List <double> numberofCasesDeathsListTotal;
 List <DateTime> caseDateDeathsListTotal;
-
 
 List<TotalDailyCountry> totalDailyCountryFromJson(String str) => List<TotalDailyCountry>.from(json.decode(str).map((x) => TotalDailyCountry.fromJson(x)));
 
