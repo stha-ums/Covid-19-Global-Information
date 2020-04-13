@@ -28,9 +28,10 @@ class _HomeScreensState extends State<HomeScreens> {
     final screenDimention = MediaQuery.of(context).size;
     UiElements.screenHeight = screenDimention.height;
     UiElements.screenWidth = screenDimention.width;
-
+    print(UiElements.screenHeight);
     return Scaffold(
-      appBar: MyCustomAppBar(height:60,), //appbar is already build
+      
+      appBar: MyCustomAppBar(height:UiElements.screenHeight*0.082,), //appbar is already build
       backgroundColor: Colors.black87,
       body: screenSelector(_selectedIndex),
 
@@ -52,7 +53,7 @@ class _HomeScreensState extends State<HomeScreens> {
         animationCurve: Curves.linear,
         animationDuration: const Duration(milliseconds: 300),
         index: _selectedIndex, 
-        height: 55,
+        height: UiElements.screenHeight*0.075,
         backgroundColor: UiElements.primaryColor,
         buttonBackgroundColor:Colors.transparent,
         color: UiElements.cardViewColor3,

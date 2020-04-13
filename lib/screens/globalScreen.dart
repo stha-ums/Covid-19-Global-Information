@@ -59,8 +59,8 @@ Future<void> _handleRefresh() async {
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => GlobalStatisticsScreen()));
                   },
                   child: Container(
-                    margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding*1.5,UiElements.padding, UiElements.padding*1.5,0),
-                    width: UiElements.screenWidth - UiElements.padding*3,
+                    margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding,UiElements.padding, UiElements.padding,0),
+                    width: UiElements.screenWidth - UiElements.padding*2,
                     height: UiElements.screenHeight*.09,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -73,7 +73,7 @@ Future<void> _handleRefresh() async {
                         Container(
                           alignment: Alignment.center,
                           height: UiElements.screenHeight*.10,
-                          width: (UiElements.screenWidth - UiElements.padding*3)/3,
+                          width: (UiElements.screenWidth - UiElements.padding*2)/3,
                           decoration: BoxDecoration(
                             color: UiElements.cardViewColor3,
                             borderRadius: BorderRadius.only(topLeft:Radius.circular(UiElements.padding) ,bottomLeft: Radius.circular(UiElements.padding)),
@@ -89,7 +89,7 @@ Future<void> _handleRefresh() async {
                         ),
 
                         Container(
-                          width: (UiElements.screenWidth - UiElements.padding*3)/3,
+                          width: (UiElements.screenWidth - UiElements.padding*2)/3,
                           height: UiElements.screenHeight*.13,
                           decoration: BoxDecoration(
                             color: UiElements.cardViewColor1,
@@ -119,7 +119,7 @@ Future<void> _handleRefresh() async {
                       ), 
                                         
                       Container(
-                        width:(UiElements.screenWidth - UiElements.padding*3)/3, 
+                        width:(UiElements.screenWidth - UiElements.padding*2)/3, 
                         height: UiElements.screenHeight*.09,
                         decoration: BoxDecoration(
                           
@@ -158,8 +158,8 @@ Future<void> _handleRefresh() async {
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => StatisticsScreen(index:countryIndex)));
                     },
                   child: Container(
-                            margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding*1.5,UiElements.padding, UiElements.padding*1.5,0),
-                    width: UiElements.screenWidth - UiElements.padding*3,
+                            margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding,UiElements.padding, UiElements.padding,0),
+                    width: UiElements.screenWidth - UiElements.padding*2,
                     height: UiElements.screenHeight*.09,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -172,7 +172,7 @@ Future<void> _handleRefresh() async {
                         Container(
                           alignment: Alignment.center,
                           height: UiElements.screenHeight*.13,
-                          width: (UiElements.screenWidth - UiElements.padding*3)/3,
+                          width: (UiElements.screenWidth - UiElements.padding*2)/3,
                           decoration: BoxDecoration(
                             color: UiElements.cardViewColor3,
                             borderRadius: BorderRadius.only(topLeft:Radius.circular(UiElements.padding) ,bottomLeft: Radius.circular(UiElements.padding)),
@@ -200,7 +200,7 @@ Future<void> _handleRefresh() async {
                         ),
 
                         Container(
-                          width: (UiElements.screenWidth - UiElements.padding*3)/3,
+                          width: (UiElements.screenWidth - UiElements.padding*2)/3,
                           height: UiElements.screenHeight*.09,
                           decoration: BoxDecoration(
                             color: UiElements.cardViewColor1,
@@ -230,7 +230,7 @@ Future<void> _handleRefresh() async {
                       ), 
                                         
                       Container(
-                        width:(UiElements.screenWidth - UiElements.padding*3)/3, 
+                        width:(UiElements.screenWidth - UiElements.padding*2)/3, 
                         height: UiElements.screenHeight*.13,
                         decoration: BoxDecoration(
                           
@@ -270,8 +270,8 @@ Future<void> _handleRefresh() async {
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => StatisticsScreen(index:chinaIndex)));
                   },
                     child: Container(
-                    margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding*1.5,UiElements.padding, UiElements.padding*1.5,0),
-                    width: UiElements.screenWidth - UiElements.padding*3,
+                    margin: EdgeInsetsDirectional.fromSTEB(UiElements.padding,UiElements.padding, UiElements.padding,0),
+                    width: UiElements.screenWidth - UiElements.padding*2,
                     height: UiElements.screenHeight*.09,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -284,7 +284,7 @@ Future<void> _handleRefresh() async {
                         Container(
                           alignment: Alignment.center,
                           height: UiElements.screenHeight*.13,
-                          width: (UiElements.screenWidth - UiElements.padding*3)/3,
+                          width: (UiElements.screenWidth - UiElements.padding*2)/3,
                           decoration: BoxDecoration(
                             color: UiElements.cardViewColor3,
                             borderRadius: BorderRadius.only(topLeft:Radius.circular(UiElements.padding) ,bottomLeft: Radius.circular(UiElements.padding)),
@@ -311,7 +311,7 @@ Future<void> _handleRefresh() async {
                         ),
 
                         Container(
-                          width: (UiElements.screenWidth - UiElements.padding*3)/3,
+                          width: (UiElements.screenWidth - UiElements.padding*2)/3,
                           height: UiElements.screenHeight*.13,
                           decoration: BoxDecoration(
                             color: UiElements.cardViewColor1,
@@ -341,10 +341,9 @@ Future<void> _handleRefresh() async {
                       ), 
                                         
                       Container(
-                        width:(UiElements.screenWidth - UiElements.padding*3)/3, 
+                        width:(UiElements.screenWidth - UiElements.padding*2)/3, 
                         height: UiElements.screenHeight*.13,
                         decoration: BoxDecoration(
-                          
                           color: UiElements.cardViewColor1,
                           borderRadius: BorderRadius.only(topRight:Radius.circular(UiElements.padding) ,bottomRight: Radius.circular(UiElements.padding)),
                         ),                        
@@ -374,10 +373,9 @@ Future<void> _handleRefresh() async {
                     ),
                   ),
                 ),
-              SizedBox(height:UiElements.padding),
-
+              SizedBox(height:UiElements.screenHeight*.0136),
               Container(
-                  width: UiElements.screenWidth - UiElements.padding*3,
+                  width: UiElements.screenWidth - UiElements.padding*2,
                   height: UiElements.screenHeight*.47,
                   decoration: BoxDecoration(
                     color: Colors.grey,

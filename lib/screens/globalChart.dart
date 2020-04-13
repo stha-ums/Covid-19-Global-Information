@@ -5,8 +5,6 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
-
 class PieChartGloble extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _PieChartGloble();
@@ -21,7 +19,7 @@ class _PieChartGloble extends State {
       aspectRatio: 1.3,
       child: Container(
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(UiElements.padding),
-        color: UiElements.backgroundcolor,),
+        color: UiElements.cardViewColor3,),
         child: Column(
           children: <Widget>[
             SizedBox(height:8),
@@ -43,7 +41,7 @@ class _PieChartGloble extends State {
                         setState(() {
                           if (pieTouchResponse.touchInput is FlLongPressEnd ||
                               pieTouchResponse.touchInput is FlPanEnd) {
-                            touchedIndex = -1;
+                              touchedIndex = -1;
                           } else {
                             touchedIndex = pieTouchResponse.touchedSectionIndex;
                           }
@@ -163,7 +161,6 @@ class _PieChartGloble extends State {
             titleStyle: TextStyle(
                 fontSize: fontSize, fontWeight: FontWeight.bold, color: const Color(0xffffffff)),
           );
-      
         default:
           return null;
       }
