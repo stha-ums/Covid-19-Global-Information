@@ -127,7 +127,7 @@ class _PieChartGloble extends State {
     return List.generate(3, (i) {
       final isTouched = i == touchedIndex;
       final double fontSize = isTouched ? 15 : 10;
-      final double radiusConf = isTouched ? 60 : 90;
+      final double radiusConf = isTouched ? 60 : UiElements.screenWidth*0.22;
       final double radius = isTouched ? 80 : 70;
       final double radiusDeaths = isTouched ? 90 : 100;
       final double confirmedCasePercent = summaryData.global.totalConfirmed.toDouble()/(summaryData.global.totalConfirmed.toDouble()+summaryData.global.totalDeaths.toDouble()+summaryData.global.totalRecovered.toDouble())*100;
