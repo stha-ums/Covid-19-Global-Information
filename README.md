@@ -1,6 +1,27 @@
-# covid19
+# Covid19
 
 A Covid 19 globle information Live Data using Flutter.
+
+## Download App
+
+[Android]()
+
+## Api Used
+- [Covid19api](https://api.covid19api.com)
+- [publicIp](https://api.ipify.org)
+- [GeoLocationFromIp](https://ipapi.co) 
+
+## Screenshots
+
+![app-screenshot1](Screenshots/Screenshot1.jpg)
+![app-screenshot2](Screenshots/Screenshot2.jpg)
+![app-screenshot3](Screenshots/Screenshot3.jpg)
+![app-screenshot4](Screenshots/Screenshot4.jpg)
+![app-screenshot5](Screenshots/Screenshot5.jpg)
+![app-screenshot6](Screenshots/Screenshot6.jpg)
+![app-screenshot7](Screenshots/Screenshot7.jpg)
+
+## Might have some bugs (New in devlopment)
 
 ## Getting Started
 
