@@ -4,7 +4,7 @@ A Covid 19 globle information Live Data using Flutter.
 
 ## Download App
 
-[Android](apk/covid19-1.apk)
+[Android](apk/covid19.apk)
 
 ## Api Used
 - [Covid19api](https://api.covid19api.com)
